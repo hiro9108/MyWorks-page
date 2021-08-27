@@ -86,7 +86,9 @@ const contentStyle: SerializedStyles = css`
     font-size: 1.6rem;
 
     span {
-      color: #e21212;
+      color: #000000b0;
+      font-family: sans-serif;
+      font-style: italic;
       font-size: 1.1rem;
     }
   }
@@ -146,7 +148,6 @@ const FoldableCard: React.FC<any> = ({
         <div css={foldableCardStyle}>
           <div css={imageBoxStyle}>
             <Image
-              className={""}
               src={mainSrc}
               alt="picture of profile01"
               layout="fill"
