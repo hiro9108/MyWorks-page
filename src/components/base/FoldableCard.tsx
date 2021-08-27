@@ -168,10 +168,20 @@ const FoldableCard: React.FC<any> = ({
                 <span className="my-2 inline-block">{text}</span>
               </h2>
               <div css={socialIconsStyle}>
-                <a href={githubUrl} target="_blank" rel="noreferrer">
+                <a
+                  href={githubUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="github url"
+                >
                   <FontAwesomeIcon icon={faGithub} size="lg" />
                 </a>
-                <a href={webUrl} target="_blank" rel="noreferrer">
+                <a
+                  href={webUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="web url"
+                >
                   <FontAwesomeIcon icon={faCloudUploadAlt} size="lg" />
                 </a>
               </div>
