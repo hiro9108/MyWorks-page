@@ -1,0 +1,28 @@
+service: ciccc-final-project
+
+frameworkVersion: "2"
+
+provider:
+  name: aws
+  stage: ${opt:stage, 'dev'}
+  region: ca-central-1
+
+package:
+  individually: true
+  patterns:
+    - "!./**"
+
+functions:
+  mock:
+    handler: api/comprehend.main
+    runtime: python3.8
+    name: ${self:provider.stage}_comprehend
+    description: Comprehend API
+    events:
+      - http:
+          path: /comprehend
+          method: POST
+          cors: true
+    package:
+      patterns:
+        - api/comprehend.py

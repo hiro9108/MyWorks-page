@@ -1,0 +1,4 @@
+{
+  "presets": ["@emotion/babel-preset-css-prop", "@babel/preset-typescript"],
+  "plugins": ["@emotion/babel-plugin", "babel-plugin-macros"]
+}
