@@ -86,7 +86,7 @@ const contentStyle: SerializedStyles = css`
     font-size: 1.6rem;
 
     span {
-      color: #000000b0;
+      color: #e21212;
       font-family: sans-serif;
       font-style: italic;
       font-size: 1.1rem;
