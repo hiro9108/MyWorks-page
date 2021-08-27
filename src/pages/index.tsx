@@ -1,7 +1,5 @@
 import type { NextPage } from "next";
-
-import tw from "twin.macro";
-import { css, SerializedStyles } from "@emotion/react";
+import { css } from "@emotion/react";
 
 import Header from "../components/base/Header";
 import FoldableCard from "../components/base/FoldableCard";
